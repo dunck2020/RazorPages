@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPages.Models;
 
 namespace RazorPages.Migrations
 {
     [DbContext(typeof(SpaContext))]
-    partial class SpaContextModelSnapshot : ModelSnapshot
+    [Migration("20211031175526_ClientAndAnnotations")]
+    partial class ClientAndAnnotations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -133,21 +135,21 @@ namespace RazorPages.Migrations
                         {
                             ID = 1,
                             ClientID = 1,
-                            Date = new DateTime(2021, 10, 31, 14, 1, 54, 137, DateTimeKind.Local).AddTicks(4166),
+                            Date = new DateTime(2021, 10, 31, 13, 55, 25, 452, DateTimeKind.Local).AddTicks(4033),
                             ServicesID = 1
                         },
                         new
                         {
                             ID = 2,
                             ClientID = 2,
-                            Date = new DateTime(2021, 10, 31, 14, 1, 54, 161, DateTimeKind.Local).AddTicks(413),
+                            Date = new DateTime(2021, 10, 31, 13, 55, 25, 461, DateTimeKind.Local).AddTicks(5112),
                             ServicesID = 7
                         },
                         new
                         {
                             ID = 3,
                             ClientID = 1,
-                            Date = new DateTime(2021, 10, 31, 14, 1, 54, 161, DateTimeKind.Local).AddTicks(484),
+                            Date = new DateTime(2021, 10, 31, 13, 55, 25, 461, DateTimeKind.Local).AddTicks(5190),
                             ServicesID = 5
                         });
                 });
